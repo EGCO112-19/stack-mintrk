@@ -45,7 +45,23 @@ int main(int argc, char **argv){
           }
        }
 
-       /*switch(argv[i][j]){
+      
+
+     }
+     if(s.size>0 || check != 0){
+         //printf("%d ..\n",s.size);
+         printf("The parenthses do not match for %s \n", argv[i]);
+         pop_all(&s);
+       }else{
+         //printf("%d ..\n",s.size);
+         printf("The parenthses match successfully for %s \n", argv[i]);
+       }
+
+  }
+   return 0;
+}
+
+ /*switch(argv[i][j]){
          case '[':
             break;
          case '{':
@@ -58,22 +74,3 @@ int main(int argc, char **argv){
             pop(&s);
             break;
        }*/
-
-     }
-     if(s.size>0 || check != 0){
-         printf("%d ..\n",s.size);
-         
-         printf("The parenthses do not match for %s \n", argv[i]);
-         pop_all(&s);
-       }else{
-         printf("%d ..\n",s.size);
-         printf("The parenthses match successfully for %s \n", argv[i]);
-       }
-
-  }
-
-
-
-
-   return 0;
-}
